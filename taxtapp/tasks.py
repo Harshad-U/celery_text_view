@@ -26,15 +26,15 @@ def add():
             else :
                 with open(textfile, 'r') as f:
 
-                    text = f.readline()
+                    text = f.read()
                     fname = os.path.basename(textfile)
                     size = os.path.getsize(textfile)
                     mdate = (datetime.datetime.fromtimestamp(os.path.getmtime(textfile)))  # modified date
                     cdate = (datetime.datetime.fromtimestamp(os.path.getmtime(textfile))) # created date
                     inserted = date.today()
 
-                    full = f.read()
-                    pth= textfile
+
+                    #pth= textfile
                     file = File_Data()
                     file.filename = fname
                     file.file_size = size
@@ -43,8 +43,8 @@ def add():
                     file.created = cdate
                     file.hash_value = d1
                     file.date_inserted = inserted
-                    file.full_data = full
-                    file.path = pth
+
+                    #file.path = pth
                     file.save()
                     print(text)
                     print(size)

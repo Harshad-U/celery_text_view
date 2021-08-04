@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'text.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'vuecelerytext',
+        'NAME': 'vuecelerytext4',
         'USER': 'admin',
         'PASSWORD': 'harsh@17',
         'HOST': 'localhost',
